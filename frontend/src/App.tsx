@@ -26,6 +26,7 @@ const closeMenu = () => {
         <div className="header-links">
             <Link to= "/">Home</Link>
             <Link to="/catalog">Catalog</Link>
+            <Link to="/payment">Payment</Link>
         </div>
     </header>
 
@@ -46,6 +47,9 @@ const closeMenu = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Products />} />
+            <Route path="orders" element={<Orders />}></Route>
+            <Route path="/order/:id" element={<OrderDetail />}></Route>
+            <Route path="/payment" element={<Payment />}></Route>
         </Routes>
     </main>
     
