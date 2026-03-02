@@ -4,6 +4,7 @@ import Home from "./Home/Home";
 import Products from './Products/Products';
 import Orders from './Orders/Orders';
 import OrderDetail from './Orders/OrderDetail';
+import PaymentScreen from './Payment/Payment';
 
 
 function App() {
@@ -50,11 +51,9 @@ const closeMenu = () => {
         <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/catalog" element={<Products />} />
-            <Route path="orders" element={<Orders />}></Route>
-            <Route path="/order/:id" element={<OrderDetail />}></Route>
-            <Route path="/payment" element={<Payment />}></Route>
             <Route path="/orders" element={<Orders />} />
             <Route path="/orders/:id" element={<OrderDetail />} />
+            <Route path="/payment" element={<PaymentScreen />} />   
         </Routes>
     </main>
     
